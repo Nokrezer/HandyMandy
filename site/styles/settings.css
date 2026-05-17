@@ -1,0 +1,208 @@
+.select-menu-settings, .settings-block{
+    /* border: solid .1vmin var(--border-color); */
+    /* border-radius: var(--border-radius); */
+}
+
+.settings-block, .settings-block *{
+    display: block;
+}
+
+.settings-page, .select-menu-settings{
+    display: inline-block;
+}
+
+.select-menu-settings > button{
+    width: 100%;
+
+    border: none;
+
+    background-color: transparent;
+
+    display: block;
+    margin: .4vh auto;
+}
+
+.select-menu-settings{
+    vertical-align: top;
+    width: 20vw;
+
+    margin-right: 1vw;
+
+    background: var(--block-background);
+}
+
+.settings{
+    display: block;
+    margin: 0 auto;
+
+    width: 70vw;
+    transform: translateX(5vw);
+}
+
+.settings *{
+    font-size: 3vmin;
+}
+
+.settings label, .settings p{
+    color: var(--second-text-color);
+}
+
+.settings-block{
+    width: 30vw;
+    padding: 2vmin;
+
+    background: var(--block-background);
+}
+
+.public-settings{
+    margin-bottom: 2vh;
+}
+
+.public-settings > p{
+    font-size: 2vmin;
+    margin: 0 0 1vmin 0;
+}
+
+.public-settings form > label{
+    margin-top: 2vmin;
+    font-size: 2.5vmin;
+}
+
+.public-settings form > textarea{
+    resize: none;
+    field-sizing: content;
+    max-width: 100%;
+}
+
+.submit-button{
+    margin-top: 1vh;
+    margin-left: auto;
+}
+
+button{
+    padding: .3vmin;
+
+    background: var(--button-bg);
+}
+
+.private-settings > p{
+    margin: 0;
+}
+
+button{
+    width: 100%;
+    height: 5vh;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--button-hover-bg);
+}
+
+.dialog-window{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--dialog-window-bg);
+
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+.dialog-window > div{
+    padding: 5vmin;
+
+    /* border: solid .1vmin var(--border-color); */
+    /* border-radius: var(--border-radius); */
+
+    background: var(--block-background);
+}
+
+.dialog-window input{
+    width: 100%;
+}
+
+.dialog-window > div{
+    width: 30vw;
+
+    transform: translateY(25vh);
+
+    margin: 0 auto;
+    display: block;
+}
+
+.set-password-window > p{
+    margin: 0;
+}
+
+.theme-circle{
+    width: 4.5vmin;
+    height: 4.5vmin;
+    /* height: 100%;
+    aspect-ratio: 1 / 1; */
+
+    border-radius: 100%;
+
+    grid-column: 1;
+}
+
+.theme-button{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.theme-button *{
+    display: inline-block;
+}
+
+.theme-button p{
+    margin: 0;
+
+    grid-column: 2;
+}
+
+.pink-theme-buttom .theme-circle{
+    background-color: pink;
+}
+
+.light-theme-buttom .theme-circle{
+    background-color: white;
+}
+
+.dark-theme-buttom .theme-circle{
+    background-color: black;
+}
+
+@media(max-width: 1080px){
+    .select-menu-settings{
+        width: 30vw;
+    }
+
+    .select-menu-settings > button{
+        height: fit-content;
+    }
+
+    .settings-block{
+        width: 55vw;
+    }
+
+    .settings{
+        width: 100%;
+        transform: translateX(2vw);
+    }
+
+    button{
+        height: fit-content;
+    }
+
+    .dialog-window > div{
+        width: 75vw;
+    }
+}

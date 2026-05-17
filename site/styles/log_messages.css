@@ -1,0 +1,4 @@
+.info-message{
+    color: var(--text-color);
+    user-select: none;
+}

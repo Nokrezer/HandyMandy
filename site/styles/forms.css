@@ -1,0 +1,77 @@
+#form-body > *
+{
+    display: block;
+    margin-bottom: .3rem;
+
+    padding: 0.5vh 1vw;
+    height: auto;
+
+    outline: none;
+
+    width: 100%;
+
+    border: solid .1rem rgb(6, 8, 13);
+    border-radius: .5rem;
+    background: none;
+    box-sizing: border-box;
+}
+
+#form-body
+{
+    width: 100%;
+    margin-top: .5rem;
+}
+
+.login-text, .button-url
+{
+    display: inline;
+}
+
+.button-url
+{
+    float: right;
+
+    text-decoration-line: none;
+
+    border: solid var(--border-size) rgb(6, 8, 13);
+    border-radius: var(--border-radius);
+
+    padding: .2vw;
+
+    margin: 1vh 0;
+}
+
+.form
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+
+    width: 25vw;
+    min-width: 250px;
+
+    height: auto;
+
+    padding: 2vh;
+
+    border-radius: .5rem;
+}
+
+#login-button, #reg-button
+{
+    margin-top: 2rem;
+    border: none;
+
+    background: rgb(155, 143, 35);
+
+    cursor: pointer;
+
+    display: block;
+}
+
+@media (max-width: 1024px){
+    .form{
+        width: 95vw;
+    }
+}

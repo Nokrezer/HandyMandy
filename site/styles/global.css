@@ -1,0 +1,111 @@
+html, body
+{
+    margin-top: .5rem;
+    user-select: none;
+}
+
+body{
+    background-color: var(--theme);
+}
+
+body *{
+    color: var(--text-color);
+    font-size: 3vh;
+
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+}
+
+.log-message
+{
+    background-color: var(--notify-messages-background);
+}
+
+button{
+    background: transparent;
+    border: none;
+
+    border-radius: var(--elems-border-radius);
+}
+
+a:active, button:active {
+    background: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.status{
+    display: inline;
+    margin: 0 .2vw;
+    padding: .2vh .5vw;
+
+    border: solid var(--border-size) var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--status-color);
+}
+
+.block{
+    border: solid var(--border-size) var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--block-background);
+}
+
+*.not-visible, #subscribe-button.not-visible, #unsubscribe-button.not-visible
+{
+    display: none;
+}
+
+.page-block{
+    margin-left: 15vw;
+    margin-right: 1vw;
+    /* width: 65vw;
+    margin: 0 auto; */
+    display: block;
+}
+
+*.center{
+    margin: 0 auto;
+    display: block;
+}
+
+input:not([type="radio"]), textarea{
+    width: 100%;
+    background: var(--input-bg);
+
+    border: solid .3vmin var(--input-border);
+    border-radius: var(--elems-border-radius);
+    outline: none;
+}
+
+.like-button{
+    font-size: 1.5vw;
+}
+
+.like{
+    width: 1vw;
+    height: 1vw;
+    filter: var(--invert-object);
+}
+
+.vert-line{
+    border: solid var(--vertical-line-width) var(--border-color);
+}
+
+@media (max-width: 1080px) {
+    html{
+        padding-bottom: 8vh;
+    }
+
+    .page-block{
+        margin: 0;
+    }
+
+    .like-button{
+        font-size: 5vw;
+    }
+
+    .like{
+        width: 4vw;
+        height: 4vw;
+        filter: var(--invert-object);
+    }
+}

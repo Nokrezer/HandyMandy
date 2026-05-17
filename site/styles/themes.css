@@ -1,0 +1,88 @@
+:root{
+    /* ТЕМЫ */
+    /* ТЕМНАЯ */
+    --black-theme: rgb(6, 8, 13);
+    --black-text-color: #F5F5F5;
+    --black-secondary-text-color: #B0B0B0;
+    --black-second-text-color: var(--black-secondary-text-color);
+    --black-notify-messages-background: rgb(24, 31, 48);
+    --black-block-background: rgb(19, 22, 33);
+    --black-border-color: rgb(27, 31, 44);
+    /* --black-menu: rgb(4, 6, 10); */
+    --black-switch-image-button-bg: rgba(45, 51, 68, 0.520);
+    --black-button-bg: rgb(12, 16, 27);
+    --black-input-bg: rgba(18, 20, 28);
+    --black-button-hover-bg: rgb(77, 77, 77);
+    --black-input-border: rgb(29, 35, 50);
+    --black-post-image-bg: rgb(27, 32, 47);
+    --black-status-color: #0c4f1c;
+    --black-invert-object: invert(1);
+
+    /* СВЕТЛАЯ */
+    --light-theme: #f8f5e6;
+    --light-text-color: black;
+    --light-secondary-text-color: black;
+    --light-second-text-color: var(--light-secondary-text-color);
+    --light-post-image-bg: rgb(195, 194, 194);
+    --light-notify-messages-background: rgb(60, 65, 78);
+    --light-block-background: #cac9c1;
+    --light-border-color: rgb(182, 193, 216);
+    /* --light-menu: rgb(0, 85, 255); */
+    --light-switch-image-button-bg: rgba(110, 110, 110, 0.52);
+    --light-button-bg: rgb(201, 201, 201);
+    --light-input-bg: rgb(227, 227, 227);
+    --light-button-hover-bg: rgb(77, 77, 77);
+    --light-input-border: rgb(136, 136, 136);
+    --light-status-color: #95b59d;
+    --light-invert-object: invert(0);
+
+    /* Настройки для всех тем */
+    --subscribe-button-bg: palevioletred;
+    --unsubscribe-button-bg: darkgray;
+    --send-message-button-bg: burlywood;
+    --dialog-window-bg: rgba(0, 0, 0, 0.5);
+    --border-size: .3vmin;
+    --elems-border-radius: .5vmin;
+    --border-radius: 1vmin;
+    --status-border-radius: 5vh;
+    --message-border-radius: 1vmin;
+    --vertical-line-width: 1px;
+}
+
+body.theme-black{
+    --theme: var(--black-theme);
+    --text-color: var(--black-text-color);
+    --secondary-text-color: var(--black-secondary-text-color);
+    --second-text-color: var(--black-second-text-color);
+    --notify-messages-background: var(--black-notify-messages-background);
+    --block-background: var(--black-block-background);
+    --border-color: var(--black-border-color);
+    /* --menu: var(--black-menu); */
+    --switch-image-button-bg: var(--black-switch-image-button-bg);
+    --button-bg: var(--black-button-bg);
+    --input-bg: var(--black-input-bg);
+    --button-hover-bg: var(--black-button-hover-bg);
+    --input-border: var(--black-input-border);
+    --post-image-bg: var(--black-post-image-bg);
+    --status-color: var(--black-status-color);
+    --invert-object: var(--black-invert-object);
+}
+
+body.theme-light{
+    --theme: var(--light-theme);
+    --text-color: var(--light-text-color);
+    --secondary-text-color: var(--light-secondary-text-color);
+    --second-text-color: var(--light-second-text-color);
+    --notify-messages-background: var(--light-notify-messages-background);
+    --block-background: var(--light-block-background);
+    --border-color: var(--light-border-color);
+    /* --menu: var(--light-menu); */
+    --switch-image-button-bg: var(--light-switch-image-button-bg);
+    --button-bg: var(--light-button-bg);
+    --input-bg: var(--light-input-bg);
+    --button-hover-bg: var(--light-button-hover-bg);
+    --input-border: var(--light-input-border);
+    --post-image-bg: var(--light-post-image-bg);
+    --status-color: var(--light-status-color);
+    --invert-object: var(--light-invert-object);
+}

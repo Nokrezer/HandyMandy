@@ -1,0 +1,17 @@
+.page-block{
+    text-align: center;
+}
+
+.latest-masters-text{
+    font-size: 1vw;
+    text-align: left;
+    color: var(--second-text-color);
+
+    margin: 0 0 1vh 0;
+}
+
+input#search-product{
+    width: 50%;
+    
+    margin-bottom: 3vh;
+}

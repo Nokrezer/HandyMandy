@@ -1,0 +1,200 @@
+*
+{
+    cursor: default;
+}
+
+#user-info, .create-href{
+    width: 80vw;
+}
+
+.create-href{
+    height: 5vh;
+
+    cursor:pointer;
+    
+    margin: 1vh auto;
+
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+
+    user-select: none;
+}
+
+#public-profile-image
+{
+    width: 32vh;
+    height: 32vh;
+
+    border-radius: 100%;
+
+    margin: 0 auto .2rem auto;
+    display: block;
+
+    object-fit: cover;
+}
+
+#bio
+{
+    width: max-content;
+    word-break: break-word;
+
+    text-align: center;
+
+    margin-top: .1rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#nick-name
+{
+    cursor: pointer;
+
+    text-align: center;
+
+    margin-top: .1rem;
+}
+
+#user-name, #nick-name, .followers-count
+{
+    user-select: none;
+    width: max-content;
+
+    margin: 0 auto;
+    display: block;
+}
+
+#subscribe-button
+{
+    display: inline-block;
+}
+
+#subscribe-button, #unsubscribe-button{
+    width: 25vw;
+}
+
+#subscribe-button
+{
+    background-color: var(--subscribe-button-bg);
+}
+
+#unsubscribe-button
+{
+    background-color: var(--unsubscribe-button-bg);
+}
+
+#button-block-public-user > button
+{
+    border: none;
+
+    border-radius: var(--elems-border-radius); 
+
+    cursor: pointer;
+    display: inline-block;
+    
+    margin: 0 .2vw;
+
+    height: 6vh;
+    font-size: 1.6vw;
+
+    text-align: center;
+    align-items: center;
+
+    white-space: nowrap;
+}
+
+#button-block-public-user
+{
+    width:max-content;
+
+    margin: 1rem auto;
+    display: block;
+}
+
+#send-message-button
+{
+    width: 18vw;
+    background-color: var(--send-message-button-bg);
+}
+
+.author-posts-choose-buttons > *{
+    width: 50%;
+    display: inline;
+    cursor: pointer;
+
+    margin-top: 2vh;
+}
+
+.statuses-block{
+    overflow-y: none;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+
+    text-align: center;
+}
+
+.settings-button:hover{
+    background: var(--switch-image-button-bg);
+}
+
+.settings-button{
+    background: transparent;
+    border: none;
+    border-radius: 100%;
+
+    margin-left: auto;
+
+    height: 4vh;
+    width: 4vh;
+
+    transform: translateY(-15%);
+
+    cursor: pointer;
+}
+
+.settings-block{
+    float: right;
+}   
+
+.settings-button > p{
+    text-align: center;
+    transform: translateY(-15%);
+    margin: 0;
+
+    font-size: 3vh;
+
+    cursor: pointer;
+}
+
+.settings-menu{
+    position:absolute;
+
+    transform: translateX(-80%);
+
+    /* width: 15vw; */
+    width: fit-content;
+
+    padding: .5vmin;
+
+    z-index: 999;
+}
+
+.settings-menu > button{
+    width: 100%;
+    font-size: 3vmin;
+
+    margin: 0;
+
+    cursor: pointer;
+
+    display: block;
+}
+
+@media(max-width: 1080px){
+    #user-info, .create-href{
+        width: 95vw;
+    }
+}

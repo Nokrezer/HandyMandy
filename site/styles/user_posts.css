@@ -1,0 +1,201 @@
+.post{
+    margin: 1rem auto 2rem auto;
+    display: block;
+
+    padding: .5vmin .2vmin;
+
+    width: 40vw;
+}
+
+.post-image
+{
+    object-fit: cover;
+    
+    border-radius: var(--border-radius);
+
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
+    width: 100%;
+    height: 50%;
+}
+
+.images-list > .image-block.selected-image
+{
+    display: inline-block;
+    margin: auto 0;
+
+    overflow: hidden;
+}
+
+.images-list
+{
+    position:relative;
+    height: 50vh;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-start;
+
+    border-radius: var(--border-radius);
+
+    background: var(--post-image-bg);
+}
+
+
+.images-list > .image-block{
+    display: none;
+}
+
+.images-list:hover > .switch-image-button
+{
+    visibility: visible;
+}
+
+.switch-image-button > p{
+    height: 4vh;
+    width: 4vh;
+
+    padding-top: .2vh;
+
+    color: rgba(var(--text-color), 0.7);
+    background-color: var(--switch-image-button-bg);
+
+    border-radius: 100%;
+
+    font: bold;
+}
+
+.switch-image-button, .switch-image-button > p{
+    cursor:pointer;
+}
+
+.switch-image-button
+{
+    height: 100%;
+
+    background: none;
+    border: none;
+    
+    visibility:hidden;
+    min-width: 1rem;
+
+    position: absolute;
+    font-size: 1rem;
+}
+
+.previous-image-button
+{
+    left:0;
+}
+
+.next-image-button
+{
+    right:0;
+}
+
+.actions-bar{
+    width: 100%;
+}
+
+.actions-bar > *{
+    display: inline-block;
+}
+
+.like-button{
+    margin-left: auto;
+    
+    background: none;
+    border:none;
+}
+
+.switch-image-button:hover{
+    background: none;
+}
+
+.post-author-photo{
+    margin: 1vmin;
+    width: 7vh;
+    height: 7vh;
+
+    border-radius: 100%;
+}
+
+.author-info a *{
+    cursor: pointer;
+}
+
+.author-info *{
+    display: inline-block;
+}
+
+.post-author-name > p{
+    font-size: 2.5vh;
+}
+
+.post-author-name{
+    margin-left: .4vmin;
+    vertical-align: top;
+}
+
+.post-date{
+    margin: 0;
+    font-size: 1.7vh;
+
+    color: var(--secondary-text-color);
+}
+
+.post-text, .post-date{
+    margin: 0 0 0 .3vh;
+}
+
+.post-text{
+    min-height: 1vh;
+
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1080px){
+    .post{
+        width: 95vw;
+    }
+
+    .post-image{
+        min-width: 5rem;
+        min-height: 5rem;
+    }
+
+    .image-block{
+        width: 95vw;
+    }
+
+    .post-text{
+        margin-top: 0;
+    }
+
+    .images-list{
+        height: 30vh;
+    }
+
+    .settings-menu > button{
+        font-size: 5vmin;
+    }
+
+    .settings-menu{
+        width: 40vw;
+        transform: translateX(-85%)
+    }
+}
+
+@media (min-width: 1080px){
+    .post-image{
+        min-width: 15rem;
+        min-height: 15rem;
+    }
+
+    .switch-image-button{
+        min-height: 15rem;
+    }
+}

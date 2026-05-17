@@ -1,0 +1,163 @@
+#drag-files-block{
+    width: 30vw;
+    height: 30vw;
+    
+    border: dashed .5vh var(--border-color);
+
+    cursor: pointer;
+
+    border-radius: var(--border-radius);
+
+    background: var(--input-bg);
+}
+
+#file-input{
+    width: 50vw;
+    height: 20rem;
+
+    border: solid 1px rgba(128, 128, 128, 0.575);
+    border-radius: .6rem;
+
+    cursor:pointer;
+}
+
+#file-input:hover{
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+.upload-text{
+    margin: 45% auto 0 auto;
+    padding: 1vh 1vw;
+    background: none;
+    border:none;
+    border-radius: .3rem;
+
+    width: fit-content;
+    height: fit-content;
+
+    user-select: none;
+}
+
+#text-input{
+    width: 100%;
+    height: 10vh;
+
+    resize: none;
+}
+
+.other-info-post{
+    margin-top: .5rem;
+}
+
+#upload-post{
+    margin-top: .3rem;
+    margin-left: auto;
+
+    background: var(--button-bg);
+    border: solid 1px var(--border-color);
+    border-radius: .3rem;
+
+    padding: .4rem;
+
+    cursor: pointer;
+}
+
+#delete-image-button{
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    height: 5vmin;
+    width: 5vmin;
+
+    text-align: center;
+
+    background-color: var(--switch-image-button-bg);
+    border: none;
+    border-radius: 100%;
+
+    min-width: 1rem;
+    position: absolute;
+    /* font-size: 3vmin; */
+
+    cursor: pointer;
+}
+
+.post{
+    margin: 0;
+}
+
+.product-settings-upload{
+    display: block;
+    margin-top: 1vh;
+
+    padding: 1vw;
+    width: 100%;
+}
+
+.product-settings-upload *{
+    color: var(--second-text-color);
+    margin: 0;
+
+    color: var(--second-text-color);
+}
+
+#product-price-input{
+    width: 100%;
+}
+
+.upload-block{
+    width: 30vw;
+    display: block;
+
+    /* left: 45vw; */
+}
+
+.page-block *{
+    font-size: 1.5vw;
+}
+
+.page-block input[type="radio"]{
+    width: 1vw;
+    height: 1vw;
+}
+
+.choose-create{
+    margin: 1vh 0;
+    padding: .5vw;
+}
+
+@media (max-width: 1080px){
+    #drag-files-block{
+        width: 55vw;
+        height: 55vw;
+    }
+
+    .upload-block{
+        width: 55vw;
+    }
+
+    .choose-create{
+        width: 55vw;
+    }
+
+    .page-block *{
+        font-size: 2.5vw;
+    }
+
+    #text-input{
+        width: 100%;
+    }
+
+    .choose-create > label{
+        font-size: 2.2vw;
+    }
+
+    .page-block input[type="radio"]{
+        width: 2vw;
+        height: 2vw;
+    }
+}

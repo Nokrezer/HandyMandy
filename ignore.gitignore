@@ -1,0 +1,9 @@
+node_modules/
+certificates/
+venv/
+UsersData/
+start_server.sh
+исходники.png
+test.py
+js/
+__pycache__/

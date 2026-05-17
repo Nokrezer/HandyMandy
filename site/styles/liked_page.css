@@ -1,0 +1,12 @@
+.select-liked-page{
+    width: 100%;
+}
+
+.select-liked-page > *{
+    width: 50%;
+    display: inline;
+}
+
+.select-liked-page > *:hover{
+    background-color: gray;
+}

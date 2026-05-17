@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/x-icon" href="img/logo.svg">
+
+        <link rel="stylesheet" href="/styles/themes.css"/>
+        <link rel="stylesheet" href="/styles/global.css"/>
+        <link rel="stylesheet" href="/styles/log_messages.css">
+    </head>
+
+    <body>
+        <div id="application">
+        </div>
+    </body>
+
+    <!-- <script type="importmap">
+    {
+        "imports": {
+            "react": "https://esm.sh/react@18?dev",
+            "react-dom": "https://esm.sh/react-dom@18?dev",
+            "react-dom/client": "https://esm.sh/react-dom@18/client?dev",
+            "react-router": "https://esm.sh/react-router@7?dev&external=react",
+            "react-hot-toast": "https://esm.sh/react-hot-toast@2.4.1?external=react"
+        }
+    }
+    </script> -->
+    
+    <script>
+    window.process = { env: { NODE_ENV: 'development' } };
+    </script>
+    <script type="importmap">
+        {
+        "imports": {
+            "react": "https://jspm.dev/npm:react@18",
+            "react-dom": "https://jspm.dev/npm:react-dom@18",
+            "react-dom/client": "https://jspm.dev/npm:react-dom@18/client?dev",
+            "react-router": "https://jspm.dev/npm:react-router-dom@6",
+            "react-hot-toast": "https://jspm.dev/npm:react-hot-toast@2.4.1?external=react"
+            }
+        }
+    </script>
+
+    <script type="module" src="/js/main.js"></script>
+</html>
